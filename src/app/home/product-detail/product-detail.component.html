@@ -124,191 +124,29 @@
                     <div class="item">
                         <div class="row">
 
-                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" *ngFor = "let itemProduct of productMore">
                                 <div class="product-item">
                                     <div class="product-item-thumbnail">
                                         <div class="product-item-background">
                                             <div class="product-item-button">
-                                                <a class="product-item-add" href="/noi-thuy-tinh-luminarc-1l-51657c">
+                                                <a class="product-item-add" >
                                                     <i class="fa fa-shopping-cart "></i>
                                                 </a>
-                                                <a class="product-item-view" href="/noi-thuy-tinh-luminarc-1l-51657c">
+                                                <a class="product-item-view" [routerLink]="['../../product-detail',itemProduct.ID]">
                                                     <i class="fa fa-search"></i>
                                                 </a>
                                             </div>
                                         </div>
-                                        <img class="img-responsive" src="thumb/medium/products/22.jpg?v=1455677419230" alt="Nồi thủy tinh Luminarc 1L 51657C">
+                                        <img class="img-responsive" src="../../../assets/image/products/{{itemProduct.ImageProduct}}" alt="{{itemProduct.NameProduct}}">
                                     </div>
                                     <h3 class="product-item-name">
-                                        <a href="/noi-thuy-tinh-luminarc-1l-51657c">Nồi thủy tinh Luminarc 1L 51657C</a>
+                                        <a href="/noi-thuy-tinh-luminarc-1l-51657c">{{itemProduct.NameProduct}}</a>
                                     </h3>
-                                    <p class="product-item-price">929.000₫</p>
+                                    <p class="product-item-price">{{itemProduct.Price}}</p>
                                 </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                                <div class="product-item">
-                                    <div class="product-item-thumbnail">
-                                        <div class="product-item-background">
-                                            <div class="product-item-button">
-                                                <a class="product-item-add" href="/am-sieu-toc-climax-ck">
-                                                    <i class="fa fa-shopping-cart "></i>
-                                                </a>
-                                                <a class="product-item-view" href="/am-sieu-toc-climax-ck">
-                                                    <i class="fa fa-search"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <img class="img-responsive" src="thumb/medium/products/11-2005ab38-291a-44d5-85ad-93345a6f0e34.jpg?v=1455936297720" alt="Ấm siêu tốc Climax CK">
-                                    </div>
-                                    <h3 class="product-item-name">
-                                        <a href="/am-sieu-toc-climax-ck">Ấm siêu tốc Climax CK</a>
-                                    </h3>
-                                    <p class="product-item-price">194.000₫</p>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                                <div class="product-item">
-                                    <div class="product-item-thumbnail">
-                                        <div class="product-item-background">
-                                            <div class="product-item-button">
-                                                <a class="product-item-add" href="/chao-chong-dinh-3-day-fivestar">
-                                                    <i class="fa fa-shopping-cart "></i>
-                                                </a>
-                                                <a class="product-item-view" href="/chao-chong-dinh-3-day-fivestar">
-                                                    <i class="fa fa-search"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <img class="img-responsive" src="thumb/medium/products/chao-chong-dinh-3-day-fivestar%20(1).jpg?v=1454408761950" alt="Chảo chống dính 3 đáy FiveStar CKD26-3DI">
-                                    </div>
-                                    <h3 class="product-item-name">
-                                        <a href="/chao-chong-dinh-3-day-fivestar">Chảo chống dính 3 đáy FiveStar CKD26-3DI</a>
-                                    </h3>
-                                    <p class="product-item-price">269.000₫</p>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                                <div class="product-item">
-                                    <div class="product-item-thumbnail">
-                                        <div class="product-item-background">
-                                            <div class="product-item-button">
-                                                <a class="product-item-add" href="javascript:void(0)" onclick="Bizweb.addItem(2127766, 1, cartItem)">
-                                                    <i class="fa fa-shopping-cart "></i>
-                                                </a>
-                                                <a class="product-item-view" href="/bo-bat-dia-su-xuong-royal-houseware">
-                                                    <i class="fa fa-search"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <img class="img-responsive" src="thumb/medium/products/untitled-3-49f1fc02-cab8-49c2-b001-baa81ae89aba.jpg?v=1455676753623"
-                                            alt="Bộ bát đĩa sứ xương Royal Houseware">
-                                    </div>
-                                    <h3 class="product-item-name">
-                                        <a href="/bo-bat-dia-su-xuong-royal-houseware">Bộ bát đĩa sứ xương Royal Houseware</a>
-                                    </h3>
-                                    <p class="product-item-price">2.323.000₫</p>
-                                </div>
-                            </div>
-
-                        </div>
+                            </div>                         
+                      </div>
                     </div>
-
-                    <div class="item">
-                        <div class="row">
-
-                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                                <div class="product-item">
-                                    <div class="product-item-thumbnail">
-                                        <div class="product-item-background">
-                                            <div class="product-item-button">
-                                                <a class="product-item-view single_view" href="/noi-com-dien-sharp-1-8l">
-                                                    <i class="fa fa-search"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <img class="img-responsive" src="thumb/medium/products/noi-com-dien-sharp-ks-18etv-1-8l-9633-1345-1-zoom.jpg?v=1455677929687"
-                                            alt="Nồi cơm điện Sharp 1.8L">
-                                    </div>
-                                    <h3 class="product-item-name">
-                                        <a href="/noi-com-dien-sharp-1-8l">Nồi cơm điện Sharp 1.8L</a>
-                                    </h3>
-                                    <p class="product-item-price">Liên hệ</p>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                                <div class="product-item">
-                                    <div class="product-item-thumbnail">
-                                        <div class="product-item-background">
-                                            <div class="product-item-button">
-                                                <a class="product-item-add" href="javascript:void(0)" onclick="Bizweb.addItem(2183028, 1, cartItem)">
-                                                    <i class="fa fa-shopping-cart "></i>
-                                                </a>
-                                                <a class="product-item-view" href="/noi-com-dien-tu-midea-mb">
-                                                    <i class="fa fa-search"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <img class="img-responsive" src="thumb/medium/products/c.jpg?v=1455678036407" alt="Nồi cơm điện tử Midea MB">
-                                    </div>
-                                    <h3 class="product-item-name">
-                                        <a href="/noi-com-dien-tu-midea-mb">Nồi cơm điện tử Midea MB</a>
-                                    </h3>
-                                    <p class="product-item-price">1.690.000₫</p>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                                <div class="product-item">
-                                    <div class="product-item-thumbnail">
-                                        <div class="product-item-background">
-                                            <div class="product-item-button">
-                                                <a class="product-item-add" href="javascript:void(0)" onclick="Bizweb.addItem(2183086, 1, cartItem)">
-                                                    <i class="fa fa-shopping-cart "></i>
-                                                </a>
-                                                <a class="product-item-view" href="/noi-com-dien-dien-tu-sanyo">
-                                                    <i class="fa fa-search"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <img class="img-responsive" src="thumb/medium/products/b6.jpg?v=1455678208093" alt="Nồi cơm điện điện tử Sanyo">
-                                    </div>
-                                    <h3 class="product-item-name">
-                                        <a href="/noi-com-dien-dien-tu-sanyo">Nồi cơm điện điện tử Sanyo</a>
-                                    </h3>
-                                    <p class="product-item-price">1.800.000₫</p>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                                <div class="product-item">
-                                    <div class="product-item-thumbnail">
-                                        <div class="product-item-background">
-                                            <div class="product-item-button">
-                                                <a class="product-item-add" href="javascript:void(0)" onclick="Bizweb.addItem(2185014, 1, cartItem)">
-                                                    <i class="fa fa-shopping-cart "></i>
-                                                </a>
-                                                <a class="product-item-view" href="/noi-chien-nuong-chan-khong-iruka">
-                                                    <i class="fa fa-search"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <img class="img-responsive" src="thumb/medium/products/6-8d207138-e544-4a0c-9da3-f372451b54b8.jpg?v=1455936385590" alt="Nồi chiên nướng chân không">
-                                    </div>
-                                    <h3 class="product-item-name">
-                                        <a href="/noi-chien-nuong-chan-khong-iruka">Nồi chiên nướng chân không</a>
-                                    </h3>
-                                    <p class="product-item-price">2.689.000₫</p>
-                                    <p class="product-item-price-sale">4.199.000₫</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>

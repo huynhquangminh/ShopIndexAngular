@@ -25,14 +25,15 @@
       <div class="col-lg-9 col-md-push-3 col-md-9 col-sm-12 col-xs-12 content">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+             
             <div class="article-image">
-              <a href="/co-nen-dung-lo-vi-song-de-nuong-banh">
+              <a >
                 <img class="img-responsive" src="/assets/image/news/{{itemNewsDetail.ImageNews}}" alt="Có nên dùng lò vi sóng để nướng bánh?">
               </a>
             </div>
-            <h1 class="article-title">
-              <a href="/co-nen-dung-lo-vi-song-de-nuong-banh">{{itemNewsDetail.NameNews}}</a>
-            </h1>
+            <h3 class="article-title">
+              {{itemNewsDetail.NameNews}}
+            </h3>
             <p class="article-info">
               <span>
                 <i class="fa fa-user"></i>{{itemNewsDetail.UserName}}</span>
@@ -71,10 +72,12 @@
           <ul class="nav-blog">
 
             <li *ngFor = "let item of newsbyview">
-              <div class="article-item2">
+              <div class="article-item2 " >              
                 <a [routerLink]="['../../news-detail',item.ID]">
                   <img class="img-responsive" src="/assets/image/news/{{item.ImageNews}}" alt="{{item.NameNews}}">
-                  <h3>{{item.NameNews}}</h3>
+                </a>
+                <a [routerLink]="['../../news-detail',item.ID]"  >
+                  <h3 class="hover-item" >{{item.NameNews}}</h3>
                 </a>
               </div>
             </li>
