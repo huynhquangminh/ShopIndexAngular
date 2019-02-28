@@ -10,6 +10,7 @@ import { ProductTypeDto } from '../model/typeProductDto';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
+  urlImage = 'http://localhost:3100/image/';
   listProduct: any = [];
   countSize = 0;
   sub: any;

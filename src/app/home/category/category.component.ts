@@ -10,6 +10,7 @@ import { GetProductByCategoryDto } from '../model/getproducbycategoryDto';
 })
 export class CategoryComponent implements OnInit {
   sub: any;
+  urlImage = 'http://localhost:3100/image/';
   listProductDto: GetProductByCategoryDto = {
     IDCategory: 0,
     StartPage: 1

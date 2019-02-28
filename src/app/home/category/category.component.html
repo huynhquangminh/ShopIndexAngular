@@ -31,11 +31,6 @@
                           <i class="fa fa-bars"></i>
                       </a>
                   </nav>
-                  <!-- <nav class="nav-sortby">
-                      <select class="sort-by" (change)="changeTypeProduct($event.target.value)">
-                          <option *ngFor ="let itemType of typeProduct"  [value]="itemType.value">{{itemType.name}}</option>
-                      </select>
-                  </nav> -->
               </div>
               <!-- product fomart Grid -->
               <div class="row category-grid" *ngIf="checkViewList">
@@ -52,7 +47,7 @@
                                       </a>
                                   </div>
                               </div>
-                              <img class="img-responsive" src="../../../assets/image/products/{{item.ImageProduct}}" alt="{{item.NameProduct}}">
+                              <img class="img-responsive" src="{{urlImage}}/{{item.ImageProduct}}" alt="{{item.NameProduct}}">
                           </div>
                           <h3 class="product-item-name">
                               <a [routerLink]="['/home/product-detail',item.ID]">{{item.NameProduct}}</a>
@@ -81,7 +76,7 @@
                                               </a>
                                           </div>
                                       </div>
-                                      <img class="img-responsive" src="../../../assets/image/products/{{item.ImageProduct}}" alt="{{item.NameProduct}}">
+                                      <img class="img-responsive" src="{{urlImage}}{{item.ImageProduct}}" alt="{{item.NameProduct}}">
                                   </div>
                               </div>
                               <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">

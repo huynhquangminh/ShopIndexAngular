@@ -12,15 +12,13 @@ import { SEARCHPRODUCT_URL } from './config';
 })
 export class FindProductComponent implements OnInit {
   sub: Subscription;
+  urlImage = 'http://localhost:3100/image/';
   searchproductdto: SearchProductDto = {
     key: ''
   };
   listProductSearch: any = [];
   constructor(private _service: AppService, private route: ActivatedRoute, private router: Router) {
-    this.sub = this.route.params.subscribe(params => {
-      const result = +params['key'];
-      this.searchproductdto.key = result.toString();
-    });
+    this.searchproductdto.key = this.route.snapshot.paramMap.get('key');
   }
 
   ngOnInit() {

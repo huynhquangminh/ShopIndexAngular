@@ -10,14 +10,12 @@ import { SendDataService } from './service/send-data-service';
 import { RouterModule } from '../../node_modules/@angular/router';
 import { AlertModule } from 'ngx-bootstrap';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { AdminComponent } from './admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import { LoginDataService } from './service/login-service';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AdminComponent
   ],
   imports: [
     BrowserModule, AppRoutingModule, HttpModule, RouterModule, AlertModule.forRoot(), NgxSpinnerModule, FormsModule

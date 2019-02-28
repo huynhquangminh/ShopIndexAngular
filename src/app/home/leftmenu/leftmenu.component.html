@@ -4,8 +4,8 @@
         <ul id="show_cate">
             <li *ngFor="let item of listCategory">
                 <a routerLink="/home/category/product/{{item.ID}}">
-                    <img src="../../../assets/image/{{item.ImageCategory}}" alt="{{item.NameCategory}}">
-                    <img src="../../../assets/image/{{item.ImageCategory}}" alt="{{item.NameCategory}}"> {{item.NameCategory}}</a>
+                    <img src="{{urlImage}}{{item.ImageCategory}}" alt="{{item.NameCategory}}">
+                    <img src="{{urlImage}}{{item.ImageCategory}}" alt="{{item.NameCategory}}"> {{item.NameCategory}}</a>
             </li>
         </ul>
     </nav>

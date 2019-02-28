@@ -33,7 +33,7 @@ import { LoginDataService } from '../service/login-service';
 
 // Configs
 export function getAuthServiceConfigs() {
-  let config = new AuthServiceConfig(
+  const config = new AuthServiceConfig(
     [
       {
         id: FacebookLoginProvider.PROVIDER_ID,

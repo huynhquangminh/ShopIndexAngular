@@ -11,7 +11,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./tintuc-detail.component.css']
 })
 export class TintucDetailComponent implements OnInit {
-
+  urlImage = 'http://localhost:3100/image/';
   itemNewsDetail: any;
   newsdetaildto: NewsDetailDto = {
     ID: 0

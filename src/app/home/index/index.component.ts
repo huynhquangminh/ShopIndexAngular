@@ -17,6 +17,7 @@ export class IndexComponent implements OnInit {
   listProdictInterest: any = [];
   listProdictPriceSale: any = [];
   listNewsByView: any = [];
+  urlImage = 'http://localhost:3100/image/';
   constructor(
     private _service: AppService,
     private router: Router,

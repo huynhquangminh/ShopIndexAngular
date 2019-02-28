@@ -28,7 +28,7 @@
              
             <div class="article-image">
               <a >
-                <img class="img-responsive" src="/assets/image/news/{{itemNewsDetail.ImageNews}}" alt="Có nên dùng lò vi sóng để nướng bánh?">
+                <img class="img-responsive" src="{{urlImage}}{{itemNewsDetail.ImageNews}}" alt="Có nên dùng lò vi sóng để nướng bánh?">
               </a>
             </div>
             <h3 class="article-title">
@@ -74,7 +74,7 @@
             <li *ngFor = "let item of newsbyview">
               <div class="article-item2 " >              
                 <a [routerLink]="['../../news-detail',item.ID]">
-                  <img class="img-responsive" src="/assets/image/news/{{item.ImageNews}}" alt="{{item.NameNews}}">
+                  <img class="img-responsive" src="{{urlImage}}{{item.ImageNews}}" alt="{{item.NameNews}}">
                 </a>
                 <a [routerLink]="['../../news-detail',item.ID]"  >
                   <h3 class="hover-item" >{{item.NameNews}}</h3>

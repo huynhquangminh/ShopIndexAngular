@@ -17,7 +17,7 @@
 </section>
 <section class="product" itemscope itemtype="http://schema.org/Product" *ngIf="productDetail">
     <meta itemprop="url" content="//cookwave-theme.bizwebvietnam.net/noi-thuy-tinh-luminarc-1l-51657c">
-    <meta itemprop="image" content="../../../assets/image/products/{{productDetail.ImageProduct}}">
+    <meta itemprop="image" content="{{urlImage}}{{productDetail.ImageProduct}}">
     <meta itemprop="shop-currency" content="VND">
     <div class="container">
         <div class="row">
@@ -25,7 +25,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 product-image">
                         <div class="elevate-image">
-                            <img  class="img-responsive" src="../../../assets/image/products/{{productDetail.ImageProduct}}" 
+                            <img  class="img-responsive" src="{{urlImage}}{{productDetail.ImageProduct}}" 
                               alt="{{productDetail.NameProduct}}" />
                             <!-- <ngx-image-zoom [thumbImage]="img" [fullImage]="img" [zoomMode]= 'hover'></ngx-image-zoom> -->
                         </div>
@@ -34,14 +34,14 @@
 
                                 <div class="item">
                                     <a href="javascript:void(0)" data-zoom-image="">
-                                        <img class="zoom1" src="../../../assets/image/products/{{productDetail.ImageProductDetail1}}" alt="{{productDetail.NameProduct}}"
+                                        <img class="zoom1" src="{{urlImage}}{{productDetail.ImageProductDetail1}}" alt="{{productDetail.NameProduct}}"
                                             alt="{{productDetail.NameProduct}}" />
                                     </a>
                                 </div>
 
                                 <div class="item">
                                     <a href="javascript:void(0)" data-zoom-image="">
-                                        <img class="zoom1" src="../../../assets/image/products/{{productDetail.ImageProductDetail2}}" alt="{{productDetail.NameProduct}}"
+                                        <img class="zoom1" src="{{urlImage}}{{productDetail.ImageProductDetail2}}" alt="{{productDetail.NameProduct}}"
                                             alt="{{productDetail.NameProduct}}" />
                                     </a>
                                 </div>
@@ -137,7 +137,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <img class="img-responsive" src="../../../assets/image/products/{{itemProduct.ImageProduct}}" alt="{{itemProduct.NameProduct}}">
+                                        <img class="img-responsive" src="{{urlImage}}{{itemProduct.ImageProduct}}" alt="{{itemProduct.NameProduct}}">
                                     </div>
                                     <h3 class="product-item-name">
                                         <a href="/noi-thuy-tinh-luminarc-1l-51657c">{{itemProduct.NameProduct}}</a>

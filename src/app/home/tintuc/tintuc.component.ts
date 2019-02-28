@@ -10,6 +10,7 @@ import { TinTucService } from '../../service/tintuc-service';
   styleUrls: ['./tintuc.component.css']
 })
 export class TintucComponent implements OnInit {
+  urlImage = 'http://localhost:3100/image/';
   listNewsByDate: any = [];
   listNewsByView: any = [];
   constructor(private _service: AppService, private _tintucservice: TinTucService, private router: Router) {

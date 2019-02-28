@@ -38,7 +38,7 @@
                                       </a>
                                   </div>
                               </div>
-                              <img class="img-responsive" src="../../../assets/image/products/{{item.ImageProduct}}" alt="{{item.NameProduct}}">
+                              <img class="img-responsive" src="{{urlImage}}{{item.ImageProduct}}" alt="{{item.NameProduct}}">
                           </div>
                           <h3 class="product-item-name">
                               <a [routerLink]="['../../product-detail',item.ID]">{{item.NameProduct}}</a>

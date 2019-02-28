@@ -11,7 +11,7 @@ import { GetProductByCategoryDto } from '../model/getproducbycategoryDto';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit, OnDestroy {
-  private sub: any;
+  urlImage = 'http://localhost:3100/image/';
   listProductDto: GetProductByCategoryDto = {
     IDCategory: 0,
     StartPage: 1

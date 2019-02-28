@@ -9,6 +9,7 @@ import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
 export class LienheComponent implements OnInit {
 
   a = false;
+  urlImage = 'http://localhost:3100/image/';
   content = 'Vivamus sagittis lacus vel augue laoreet rutrum faucibus.';
   from: FormGroup;
   constructor(private fb: FormBuilder, private router: Router) {

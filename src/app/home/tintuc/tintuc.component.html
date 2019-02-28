@@ -24,7 +24,7 @@
             <article class="article-item article_grid_item col-lg-6 col-md-6 col-sm-6 col-xs-12" *ngFor ="let item of listNewsByDate">
               <div class="article-image">
                 <a [routerLink]="['../news-detail',item.ID]">
-                  <img class="img-responsive" src="/assets/image/news/{{item.ImageNews}}" alt="{{item.NameNews}}">
+                  <img class="img-responsive" src="{{urlImage}}{{item.ImageNews}}" alt="{{item.NameNews}}">
                 </a>
               </div>
               <h2 class="article-title">
@@ -52,7 +52,7 @@
             <li *ngFor ="let item of listNewsByView">
               <div class="article-item2">
                 <a [routerLink]="['../news-detail',item.ID]">
-                  <img class="img-responsive" src="/assets/image/news/{{item.ImageNews}}" alt="{{item.NameNews}}">
+                  <img class="img-responsive" src="{{urlImage}}{{item.ImageNews}}" alt="{{item.NameNews}}">
                   <h3>{{item.NameNews}}</h3>
                 </a>
               </div>

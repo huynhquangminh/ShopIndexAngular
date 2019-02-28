@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class LeftmenuComponent implements OnInit {
 
   public listCategory = [];
+  urlImage = 'http://localhost:3100/image/';
   constructor(private _service: AppService, private _sendDataService: SendDataService) {
     this.listCategory = this._sendDataService.GetDataService();
   }
